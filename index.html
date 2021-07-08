@@ -1,0 +1,293 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>LINE公式アカウントを作成して、LINE上で利用できるクーポンやショップカードを作成してみよう</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="2021LINEAccount"
+                  title="LINE公式アカウントを作成して、LINE上で利用できるクーポンやショップカードを作成してみよう"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="本日のゴール" duration="0">
+        <p>LINEビジネスIDを取得してLINE公式アカウントを作成。</p>
+<p>LINE上で利用できるクーポンをノーコード完成させる！</p>
+<p class="image-container"><img style="width: 359.36px" src="img\317a8c4bcafef077.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="LINE Business IDを作成" duration="0">
+        <h2 is-upgraded>１．１ <a href="https://www.linebiz.com/jp/entry/" target="_blank">LINE公式アカウント</a><strong>作成のためのLINE Business IDを取得する</strong></h2>
+<p class="image-container"><img style="width: 624.00px" src="img\356bf4f6a4c39736.png"></p>
+<p>【LINE公式アカウントの開設(無料)】を選択してください。</p>
+<h2 is-upgraded><strong>１．２．LINE Business IDを作成</strong></h2>
+<p class="image-container"><img style="width: 464.00px" src="img\c533f21cf1fb46e2.png"></p>
+<pre>LINEアカウント・・・・・ 現在、利用しているLINEと連携することができます。
+ビジネスアカウント・・・ メールアドレスで登録することができます。</pre>
+<p>※LINEアカウントだと、スマホでQRコードを読み取ってログインができるなど簡単ですが、個人のLINEと紐づいてしまうため、会社で利用のかたはメールアドレスで登録できるビジネスアカウントの取得をおすすめします。</p>
+<aside class="special"><p>アカウントをお持ちの方は、ログインしてチャネル作成に進んでください。</p>
+</aside>
+<p>アカウントをお持ちでないかたは、これからアカウントを作成します。</p>
+<h3 is-upgraded><strong>１．２．１ アカウントの新規作成</strong></h3>
+<p> ①</p>
+<p> 初めての方は「アカウントの作成」を押下してください。</p>
+<p class="image-container"><img style="width: 371.00px" src="img\bbd49bad6bf2a6d5.png"></p>
+<p> ②</p>
+<p>「LINEアカウントで登録」または「メールアドレスで登録」を選択してください。</p>
+<aside class="special"><p>LINEアカウントで登録のほうがQRコードログインでいけるので簡単ですが、個人のLINEアカウントと連携します。利用用途によって使い分けることをおすすめします。</p>
+</aside>
+<p>LINEアカウントで登録は簡単ですので、こちらでは、メールアドレスで登録の説明をします。</p>
+<p class="image-container"><img style="width: 436.00px" src="img\9e256a8a0c8d01e3.png"></p>
+<p>③登録するメールアドレスを入力してください。</p>
+<p class="image-container"><img style="width: 357.58px" src="img\42cd650bc6e93b7a.png"></p>
+<p>④入力したメールアドレスに登録確認メールが届きますので「登録画面に進む」を押してください。</p>
+<p class="image-container"><img style="width: 512.00px" src="img\985114d2d09ce79d.png"></p>
+<p>⑤ご自身のお名前と、LINE Business IDで利用するパスワードを入力して【登録】を押下してください。</p>
+<p class="image-container"><img style="width: 333.00px" src="img\18bf618bab2767c9.png"></p>
+<p>⑥登録確認画面で内容を確認して「登録」を押下</p>
+<p class="image-container"><img style="width: 403.00px" src="img\a8b93cbe7e65624e.png"></p>
+<p>⑦ユーザー登録が完了しました。LINE公式アカウントの作成を行います</p>
+<p class="image-container"><img style="width: 456.00px" src="img\dc6faf9b20e4c53d.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="LINE公式アカウントの作成" duration="0">
+        <h2 is-upgraded>２．１ LINE公式アカウントの作成</h2>
+<p>アカウント名にLINE公式アカウントに表示されるチャネル名を入力</p>
+<p>業種は今回はハンズオンですので、大業種【個人】、小業種【個人(その他)】を選択</p>
+<p>その後、確認を押下してください。</p>
+<p class="image-container"><img style="width: 563.00px" src="img\86a366f5d575e6f6.png"></p>
+<p><strong>入力内容の確認</strong></p>
+<p>入力内容を確認し、間違いがなければ【完了】を押下してください。</p>
+<p class="image-container"><img style="width: 477.00px" src="img\ac19a35f172dcf5b.png"></p>
+<h2 is-upgraded><strong>申し込み完了</strong></h2>
+<p>LINE公式アカウントが無事に作成されました！</p>
+<p>これから管理画面である「LINE Official Account Manager」へ移動します。</p>
+<p class="image-container"><img style="width: 591.00px" src="img\c8e7bcd6301cf053.png"></p>
+<h2 is-upgraded><strong>情報利用に関する同意についてを読み同意ボタンを押下</strong></h2>
+<p class="image-container"><img style="width: 624.00px" src="img\1d6e6e8e9effe41.png"></p>
+<p><strong>友だち追加</strong></p>
+<p>今後の動作を確認するためにQRコードを読み、LINEに友だち追加をしましょう！</p>
+<p>QRコードの読み込みは、LINEを立ち上げなくてもスマホのQRコードリーダーで読み込めば自動的にLINEが起動して友だち追加画面になります。</p>
+<p class="image-container"><img style="width: 624.00px" src="img\a51d69f1e3754e43.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="メッセージ配信" duration="0">
+        <p>まずは基本機能であるLINE公式アカウントからメッセージを送信したいと思います。</p>
+<aside class="special"><p>フリープランではメッセージ送信は月1000通までとなっております。</p>
+</aside>
+<p>操作はすべて「<a href="https://account.line.biz/login" target="_blank">LINE Officia Account Manager</a>」から行います。</p>
+<p>ホーム→メッセージ配信→メッセージを作成 を選択してください</p>
+<p class="image-container"><img style="width: 624.00px" src="img\e2b4d9050cebe5c8.png"></p>
+<h2 is-upgraded><strong>配信先</strong></h2>
+<p>・<strong>すべての友だち</strong></p>
+<p> 友だち登録している人すべてにメッセージを配信します。</p>
+<p>・<strong>絞り込み</strong></p>
+<p> オーディエンス(友だち追加経路や、メッセージクリックしてくれた人等)で設定や、属性別(友だち期間や性別、年齢などの推定属性)で配信先を選択して配信。</p>
+<aside class="warning"><p>属性で絞り込むには、ターゲットリーチ数が100人以上必要です。</p>
+</aside>
+<p>メッセージ入力欄にメッセージやスタンプなど入力して【配信】ボタンを押下してください。</p>
+<aside class="special"><p>【＋追加】ボタンを押すことにより3つまで追加することができます。３つ分作成しましてもメッセージ数のカウントは【1通】としてカウントされます。</p>
+</aside>
+<p><strong>友だち登録しましたアカウントからメッセージが届いていることを確認してください。</strong></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="【メッセージ配信に関する参考情報】" duration="0">
+        <p><strong>配信先や設定の説明です。飛ばしていただいて大丈夫です。</strong></p>
+<h2 is-upgraded><strong>属性で絞り込んだ時に表示されるフィルター例</strong><br><strong>(最低100人以上の友だちが必要です)</strong></h2>
+<p class="image-container"><img style="width: 281.50px" src="img\efd1a0ff1a3cfba3.png"><img style="width: 306.50px" src="img\12bec9903fe98d97.png"></p>
+<p class="image-container"><img style="width: 285.50px" src="img\b8f8bc7de808af91.png"><img style="width: 281.89px" src="img\d0062dfb31360121.png"></p>
+<h2 is-upgraded><strong>配信日時</strong></h2>
+<p>・今すぐ配信        ・・・        配信ボタンを押したらすぐに配信</p>
+<p>・時間指定配信・・        時間を指定して配信</p>
+<aside class="special"><p>広告など配信する場合、10:00に配信などぴったりな時間であれば、他の配信と被ることがあるので、少しずらすと読まれる率が高くなります。</p>
+</aside>
+<h2 is-upgraded><strong>高度な設定</strong></h2>
+<p><strong>・タイムラインに投稿する<br></strong>配信するメッセージと同じ内容をタイムラインに投稿することができます。<br>タイムラインに同時投稿できるのは、テキスト・スタンプ・写真・動画・クーポンのうち、いずれか1件を配信する場合のみです。<br>配信メッセージ数を指定していたり、A/Bテストを設定している場合は利用できません。<br>タイムラインに投稿すると、アカウントの友だちだけでなく、タイムライン投稿をフォローしているユーザーも配信メッセージを見ることができます。</p>
+<p><strong>・配信メッセージ数<br></strong>配信メッセージ数を指定できます（現時点の配信可能数以内）。配信先は配信時点の友だちの中からランダムに選択されます。</p>
+<p>・<strong>A/Bテストを設定する<br></strong>複数のメッセージ内容（バリエーション）を作成し、特定の割合のユーザーにテスト配信することができます。<br>テスト配信後にそれぞれのバリエーションの分析結果を確認し、最もパフォーマンスが良かったメッセージを残りのユーザーに配信することもできます（テスト開始から3日以内に限る）。<br>ただし、ターゲットリーチが5000人以上、バリエーションあたり2500人のユーザーが必要です。</p>
+<aside class="special"><p>※A/BテストはWEBマーケティングにおける手法の１つです。</p>
+<p>どちらが良い成果がでるかをテストし、良い結果が出たもので配信することができます。</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="応答メッセージの作成" duration="0">
+        <p><strong>応答メッセージとは</strong></p>
+<p>LINE上でユーザーが送った際に、返答されるメッセージ。(1000件まで作成可能)</p>
+<p>・ランダムで返答されるメッセージ<br>・キーワードを設定して、合致した場合に返答するメッセージ</p>
+<p>の2種類の応答メッセージを作成することができます。</p>
+<p>チャットボットとほぼ同等の機能ですが、自然言語処理(人間の口語の理解)はできません。</p>
+<p>ただし、キーワードを多く設定することにより、応答率を高めることはできます。</p>
+<aside class="special"><p>2021年6月時点では、キーワードは1応答メッセージあたり51個まで設定することができます。</p>
+</aside>
+<p><strong>応答メッセージの作成</strong></p>
+<p>応答メッセージでキーワード設定したものを<br>２つ作成してください。（それ以外もつくっていただいて大丈夫です。）</p>
+<p>キーワードは<br>「<strong>営業時間</strong>」のメッセージと「<strong>おすすめメニュー</strong>」のメッセージの<br>2つ作成してください。</p>
+<p class="image-container"><img style="width: 624.00px" src="img\bedb9dbdc6b8b02e.png"></p>
+<pre>タイトル：保存される名前(ファイル名のイメージ)
+
+ステータス：この応答メッセージを有効/無効
+
+スケジュール：選択された時間でメッセージを起動
+(イベント中や営業時間外に流すイメージ)
+
+キーワード：完全一致した場合に返すときはこれを設定
+設定しなければ、設定外の文字が入力された時に返す
+(ex.リッチメニューでテキスト設定したときに返す言葉)
+
+入力画面：言葉やリッチメッセージ等を設定</pre>
+<p class="image-container"><img style="width: 594.00px" src="img\1e2093739d8dfa43.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="応答メッセージのテスト" duration="0">
+        <p>先程キーワード設定をした</p>
+<p>「営業時間」</p>
+<p>「おすすめメニュー」</p>
+<p>とLINE上ではなしかけてみてください。</p>
+<p>登録したメッセージが返ってきます。</p>
+<p>それ以外の文字を入力すると</p>
+<p>キーワード設定していない文章がランダムで返ってきます。</p>
+<aside class="special"><p>この応答メッセージやキーワードをたくさん追加することで、チャットボットに近い動作をさせることが可能です。</p>
+</aside>
+<p class="image-container"><img style="width: 207.03px" src="img\98fa263687dbc55c.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="クーポンの作成" duration="0">
+        <p>LINE上で使用できるクーポンです</p>
+<p>作成したクーポンはメッセージ・タイムライン・</p>
+<p>応答メッセージなどで配信・投稿が可能。</p>
+<p>使用回数や、抽選機能などを盛り込むことができます。</p>
+<p class="image-container"><img style="width: 624.00px" src="img\be4e5cffec892ba7.png"></p>
+<p>クーポンの作成</p>
+<p>①ホーム→ツール→クーポン→作成と進みます。</p>
+<p class="image-container"><img style="width: 624.00px" src="img\780048d38edf40a7.png"></p>
+<p>続いてクーポンの内容を設定します。</p>
+<p class="image-container"><img style="width: 624.00px" src="img\b70cb46022c94eda.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="リッチメニューとは" duration="0">
+        <pre>LINE公式アカウントのトークを訪れた際、
+画面下部に大きく開くメニューのこと。
+
+メニューをタップすると、外部サイトへ飛んだり、
+設定したキーワードの送信、ショップカードの表示が可能。
+
+企業のLINE公式アカウントのトーク画面の下部に
+表示されているものをイメージしていただくと
+わかりやすいと思います。
+
+画像をPC上で作成してアップロードすることも、
+WEB上の管理画面にて作成することも可能。</pre>
+<p>今回は、WEB上の管理画面(LINE OfficialAccountManager)にて作成します。</p>
+<p class="image-container"><img style="width: 277.00px" src="img\dbc9ff5cc4e3d35e.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="リッチメニューの作成" duration="0">
+        <p>では実際に作成をしていきます。</p>
+<p><strong>①ホーム→トークルーム管理→リッチメニュー→作成と選択してください</strong>。</p>
+<p class="image-container"><img style="width: 624.00px" src="img\96bf888b58e53142.png"></p>
+<p><strong>②リッチメニューの設定を実施します。</strong></p>
+<p class="image-container"><img style="width: 624.00px" src="img\21f9eb6f4e99cd22.png"></p>
+<p><strong>③テンプレートの選択</strong></p>
+<p>表示されるメニュー今回は</p>
+<p>「大」の「4画面」を選択してください。</p>
+<p>（参考情報：APIを使えば最大20個のボタンを作れます。）</p>
+<p class="image-container"><img style="width: 624.00px" src="img\9ee6f927d85de28d.png"></p>
+<p><strong>④メニューのデザインをしていきます。</strong></p>
+<p>デザインはWEB上でデザインできます。</p>
+<p>選択する領域を選択してテキストを入力していきます。</p>
+<p>今回は</p>
+<pre>「営業時間」
+「おすすめ」
+「クーポン」
+「ショップサイト」</pre>
+<p>の４つのボタンを作ってください。</p>
+<p class="image-container"><img style="width: 624.00px" src="img\12368cbfc336d9f0.png"></p>
+<p><strong>⑤メニューボタンの設定</strong></p>
+<p>リッチメニューのボタンを押したときにどういう動作をするか設定します。</p>
+<p>タイプの意味がわかりにくいかもしれませんが後でわかると思います！</p>
+<pre>A「営業時間」
+タイプ：テキスト
+内容：
+「営業時間」(応答メッセージで設定したキーワードです)</pre>
+<pre>B「おすすめ」
+タイプ：テキスト
+内容：
+「おすすめメニュー」(応答メッセージで設定したキーワードです)</pre>
+<pre>C「クーポン」
+タイプ：クーポン
+内容：
+先ほどで作成したクーポン
+アクションラベル：
+管理用の名前を記載
+(クーポン等)</pre>
+<pre>D「ショップサイト」
+タイプ：リンク
+内容：
+どこかのURL(ヤフー等)を記載
+アクションラベル：
+管理用の名前を記載
+(リンク等)</pre>
+<p class="image-container"><img style="width: 536.00px" src="img\83158ace9ac042f5.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="完成です！" duration="0">
+        <p>先程登録しましたLINEをひらいてみてください！</p>
+<p>先程、作成してものが完成しております。</p>
+<p>(表示されない場合は、一度、トーク一覧の画面に戻るか、</p>
+<p> LINEの再起動をお願いいたします。)</p>
+<p>このように簡単に作成できます。</p>
+<p>作り込めばもっとできますのでご活用ください。</p>
+<p class="image-container"><img style="width: 303.00px" src="img\c008b1d38fd9952d.png"></p>
+<aside class="special"><p>ショップカードもリッチメニューに組み込むことができますので、時間がある方はぜひ作成してみてください。</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

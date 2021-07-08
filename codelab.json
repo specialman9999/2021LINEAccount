@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-07-08T10:58:20Z",
+  "id": "2021LINEAccount",
+  "duration": 0,
+  "title": "LINE公式アカウントを作成して、LINE上で利用できるクーポンやショップカードを作成してみよう",
+  "authors": "specialman9999",
+  "summary": "LINE公式アカウントを作成して、LINE上で利用できるクーポンやショップカードを作成してみよう",
+  "source": "15CJrGBvJjho3pyddVQoq7lpw0ICPNWIahOxHXV0Q3IA",
+  "theme": "web",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "Web"
+  ],
+  "tags": [
+    "line",
+    "web"
+  ],
+  "url": "2021LINEAccount"
+}
